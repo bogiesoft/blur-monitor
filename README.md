@@ -83,7 +83,7 @@ Currently the tool can be used to monitor the following information:
 	node ./blurmonitor
 	```
 
-The server will launch on port 3000 by default, or you can reference the command line flags.
+The server will launch on port 3201 by default, or you can reference the command line flags.
 
 A proxy server through Apache or NGINX is recommended for production environments.
 
@@ -98,7 +98,7 @@ Sample Apache configuration:
 	SetEnv no-gzip 1
 
 	ProxyRequests On
-	ProxyPass / http://127.0.0.1:3000/
+	ProxyPass / http://127.0.0.1:3201/
 </VirtualHost>
 ```
 
@@ -106,7 +106,7 @@ Sample Apache configuration:
 
 ### Port (-p)
 ```bash
-	node ./blurmonitor -p 3000
+	node ./blurmonitor -p 3201
 ```
 
 ### Environment (-e)
@@ -135,6 +135,6 @@ Included icons are courtesy of the former Flattr icon project: https://github.co
 
 Additional icons courtesy of KDA Web Technologies: http://icons.kdaweb.com/
 
-Original project icons used when no other subtitutue could be found. If there
+Original project icons used when no other substitute could be found. If there
 are any copyright concerns, please issue a pull request and the offending
 artwork will be removed.
